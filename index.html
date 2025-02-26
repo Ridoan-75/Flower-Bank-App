@@ -5,11 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="output.css">
-    <title>Document</title>
+    <title>Flower Bank</title>
 </head>
-<body>
-    <h1 class="text-4xl font-bold bg-red-400">
-        Hello world!
-      </h1>
+<body class="flex items-center justify-center min-h-screen bg-gray-400">
+    <div class="w-full max-w-2xl bg-white p-6 rounded-lg shadow-lg">
+            <h1 class="text-4xl font-bold text-center mb-4">Flower Bank Ltd</h1>
+        <!--dashboard-->
+        <div class="grid grid-cols-3 gap-4 text-center">
+            <div class="bg-amber-400 p-4 rounded">
+                <h2 class="font-semibold">Deposit</h2>
+                <p class="text-3xl">$ <span id="deposit">0</span></p>
+            </div>
+
+            <div class="bg-green-400 p-4 rounded">
+                <h2 class="font-semibold">Withdraw</h2>
+                <p class="text-3xl">$ <span id="withdraw">0</span></p>
+            </div>
+
+            <div class="bg-sky-400 p-4 rounded">
+                <h2 class="font-semibold">Balance</h2>
+                <p class="text-3xl">$ <span id="balance">0</span></p>
+            </div>
+        </div>
+    </div>
+
+<!--JS link-->   
+<script src="script.js"></script>
 </body>
 </html>
